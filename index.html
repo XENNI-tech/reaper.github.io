@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Host</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Host</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" required />
+            <input type="file" id="fileInput" accept="image/*" name="image" />
+            <button type="button" onclick="uploadImage()">Upload Image</button>
+        </form>
+        <div id="imageContainer"></div>
+        <div id="shareableLink"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
